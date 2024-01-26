@@ -1,122 +1,128 @@
 import { Editor } from '@tiptap/core'
-window.Editor = Editor;
+window.tiptapEditor = Editor;
 
 // import StarterKit from '@tiptap/starter-kit'
-// window.StarterKit = StarterKit;
+// window.tiptapStarterKit = StarterKit;
 
 import Document from '@tiptap/extension-document';
-window.Document = Document;
+window.tiptapDocument = Document;
 
 import HardBreak from '@tiptap/extension-hard-break';
-window.HardBreak = HardBreak;
+window.tiptapHardBreak = HardBreak;
 
 import Paragraph from '@tiptap/extension-paragraph';
-window.Paragraph = Paragraph;
+window.tiptapParagraph = Paragraph;
 
 import Text from '@tiptap/extension-text';
-window.Text = Text;
+window.tiptapText = Text;
 
 import Heading from '@tiptap/extension-heading';
-window.Heading = Heading;
+window.tiptapHeading = Heading;
 
 import Bold from '@tiptap/extension-bold';
-window.Bold = Bold;
+window.tiptapBold = Bold;
 
 import Code from '@tiptap/extension-code';
-window.Code = Code;
+window.tiptapCode = Code;
+
+import CodeBlockLowlight from '@tiptap/extension-code-block-lowlight';
+window.tiptapCodeBlockLowlight = CodeBlockLowlight;
+
+import { lowlight } from 'lowlight';
+window.tiptapLowlight = lowlight;
 
 import Italic from '@tiptap/extension-italic';
-window.Italic = Italic;
+window.tiptapItalic = Italic;
 
 import Strike from '@tiptap/extension-strike';
-window.Strike = Strike;
+window.tiptapStrike = Strike;
 
 import Dropcursor from '@tiptap/extension-dropcursor';
-window.Dropcursor = Dropcursor;
+window.tiptapDropcursor = Dropcursor;
 
 import Gapcursor from '@tiptap/extension-gapcursor';
-window.Gapcursor = Gapcursor
+window.tiptapGapcursor = Gapcursor
 
 import History from '@tiptap/extension-history';
-window.History = History
+window.tiptapHistory = History
 
 import Blockquote from '@tiptap/extension-blockquote';
-window.Blockquote = Blockquote;
+window.tiptapBlockquote = Blockquote;
 
 import BulletList from '@tiptap/extension-bullet-list';
-window.BulletList = BulletList;
+window.tiptapBulletList = BulletList;
 
 import CodeBlock from '@tiptap/extension-code-block';
-window.CodeBlock = CodeBlock;
+window.tiptapCodeBlock = CodeBlock;
 
 import HorizontalRule from '@tiptap/extension-horizontal-rule';
-window.HorizontalRule = HorizontalRule;
+window.tiptapHorizontalRule = HorizontalRule;
 
 import ListItem from '@tiptap/extension-list-item';
-window.ListItem = ListItem;
+window.tiptapListItem = ListItem;
 
 import OrderedList from '@tiptap/extension-ordered-list';
-window.OrderedList = OrderedList;
+window.tiptapOrderedList = OrderedList;
 
 import CharacterCount from '@tiptap/extension-character-count';
-window.CharacterCount = CharacterCount;
+window.tiptapCharacterCount = CharacterCount;
 
 import Youtube from "@tiptap/extension-youtube";
-window.Youtube = Youtube;
+window.tiptapYoutube = Youtube;
 
 import Underline from "@tiptap/extension-underline";
-window.Underline = Underline;
+window.tiptapUnderline = Underline;
 
 import Table from "@tiptap/extension-table";
-window.Table = Table;
+window.tiptapTable = Table;
 
 import TableCell from "@tiptap/extension-table-cell";
-window.TableCell = TableCell;
+window.tiptapTableCell = TableCell;
 
 import TableHeader from "@tiptap/extension-table-header";
-window.TableHeader = TableHeader;
+window.tiptapTableHeader = TableHeader;
 
 import TableRow from "@tiptap/extension-table-row";
-window.TableRow = TableRow;
+window.tiptapTableRow = TableRow;
 
 import Image from "@tiptap/extension-image";
-window.Image = Image;
+window.tiptapImage = Image;
 
 import Link from "@tiptap/extension-link";
-window.Link = Link;
+window.tiptapLink = Link;
 
 import TaskList from "@tiptap/extension-task-list";
-window.TaskList = TaskList;
+window.tiptapTaskList = TaskList;
 
 import TaskItem from "@tiptap/extension-task-item";
-window.TaskItem = TaskItem;
+window.tiptapTaskItem = TaskItem;
 
 import Placeholder from "@tiptap/extension-placeholder";
-window.Placeholder = Placeholder;
+window.tiptapPlaceholder = Placeholder;
 
 import BubbleMenu from "@tiptap/extension-bubble-menu";
-window.BubbleMenu = BubbleMenu;
+window.tiptapBubbleMenu = BubbleMenu;
 
 import FloatingMenu from "@tiptap/extension-floating-menu";
-window.FloatingMenu = FloatingMenu;
+window.tiptapFloatingMenu = FloatingMenu;
 
 import TextAlign from "@tiptap/extension-text-align";
-window.TextAlign = TextAlign;
+window.tiptapTextAlign = TextAlign;
 
 import Highlight from "@tiptap/extension-highlight";
-window.Highlight = Highlight;
+window.tiptapHighlight = Highlight;
 
 import { generateHTML } from "@tiptap/html";
-window.generateHTML = generateHTML;
+window.tiptapgenerateHTML = generateHTML;
 
 import Collaboration from '@tiptap/extension-collaboration';
-window.Collaboration = Collaboration;
+window.tiptapCollaboration = Collaboration;
 
 import CollaborationCursor from '@tiptap/extension-collaboration-cursor';
-window.CollaborationCursor = CollaborationCursor;
+window.tiptapCollaborationCursor = CollaborationCursor;
 
 import { TiptapCollabProvider } from '@hocuspocus/provider';
-window.TiptapCollabProvider = TiptapCollabProvider;
+window.tiptapCollabProvider = TiptapCollabProvider;
 
 import * as Y from 'yjs'
-window.Y = Y;
+window.tiptapY = Y;
