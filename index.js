@@ -124,6 +124,9 @@ window.tiptapCollaborationCursor = CollaborationCursor;
 import { TiptapCollabProvider } from "@hocuspocus/provider";
 window.tiptapCollabProvider = TiptapCollabProvider;
 
+import { HocuspocusProvider } from "@hocuspocus/provider";
+window.tiptapHocuspocusProvider = HocuspocusProvider;
+
 import * as Y from "yjs";
 window.tiptapY = Y;
 
