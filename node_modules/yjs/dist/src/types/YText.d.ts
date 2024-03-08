@@ -168,12 +168,12 @@ export class YText extends AbstractType<YTextEvent> {
      *
      * @param {number} index The index to insert the embed at.
      * @param {Object | AbstractType<any>} embed The Object that represents the embed.
-     * @param {TextAttributes} attributes Attribute information to apply on the
+     * @param {TextAttributes} [attributes] Attribute information to apply on the
      *                                    embed
      *
      * @public
      */
-    public insertEmbed(index: number, embed: Object | AbstractType<any>, attributes?: TextAttributes): void;
+    public insertEmbed(index: number, embed: Object | AbstractType<any>, attributes?: Object | undefined): void;
     /**
      * Deletes text starting from an index.
      *

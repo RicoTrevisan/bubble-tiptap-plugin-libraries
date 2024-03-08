@@ -86,16 +86,18 @@ export class YXmlElement<KV extends {
     /**
      * Returns all attribute name/value pairs in a JSON Object.
      *
+     * @param {Snapshot} [snapshot]
      * @return {{ [Key in Extract<keyof KV,string>]?: KV[Key]}} A JSON Object that describes the attributes.
      *
      * @public
      */
-    public getAttributes(): { [Key in Extract<keyof KV, string>]?: KV[Key] | undefined; };
+    public getAttributes(snapshot?: Snapshot | undefined): { [Key in Extract<keyof KV, string>]?: KV[Key] | undefined; };
 }
 export function readYXmlElement(decoder: UpdateDecoderV1 | UpdateDecoderV2): YXmlElement;
 export type ValueTypes = Object | number | null | Array<any> | string | Uint8Array | AbstractType<any>;
 import { YXmlFragment } from "./YXmlFragment.js";
 import { YXmlText } from "./YXmlText.js";
+import { Snapshot } from "../utils/Snapshot.js";
 import { UpdateDecoderV1 } from "../utils/UpdateDecoder.js";
 import { UpdateDecoderV2 } from "../utils/UpdateDecoder.js";
 import { AbstractType } from "./AbstractType.js";

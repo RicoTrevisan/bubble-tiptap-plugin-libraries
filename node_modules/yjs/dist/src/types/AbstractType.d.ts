@@ -149,6 +149,11 @@ export function typeMapHas(parent: AbstractType<any>, key: string): boolean;
 export function typeMapGetSnapshot(parent: AbstractType<any>, key: string, snapshot: Snapshot): {
     [x: string]: any;
 } | number | null | Array<any> | string | Uint8Array | AbstractType<any> | undefined;
+export function typeMapGetAllSnapshot(parent: AbstractType<any>, snapshot: Snapshot): {
+    [x: string]: {
+        [x: string]: any;
+    } | number | null | Array<any> | string | Uint8Array | AbstractType<any> | undefined;
+};
 export function createMapIterator(map: Map<string, Item>): IterableIterator<Array<any>>;
 import { Item } from "../structs/Item.js";
 import { Transaction } from "../utils/Transaction.js";
