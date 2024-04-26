@@ -33,9 +33,9 @@ export class YXmlTreeWalker implements Iterable<YXmlElement | YXmlText | YXmlEle
      */
     constructor(root: YXmlFragment | YXmlElement, f?: ((arg0: AbstractType<any>) => boolean) | undefined);
     _filter: (arg0: AbstractType<any>) => boolean;
-    _root: YXmlFragment | YXmlElement<{
+    _root: YXmlElement<{
         [key: string]: string;
-    }>;
+    }> | YXmlFragment;
     /**
      * @type {Item}
      */
