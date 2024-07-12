@@ -30,6 +30,8 @@ window.tiptapCodeBlockLowlight = CodeBlockLowlight;
 
 // import { lowlight } from 'lowlight';
 // window.tiptapLowlight = lowlight;
+import Mention from "@tiptap/extension-mention";
+window.tiptapMention = Mention;
 
 import Italic from "@tiptap/extension-italic";
 window.tiptapItalic = Italic;
