@@ -1,5 +1,6 @@
-import { Editor } from "@tiptap/core";
+import { Editor, mergeAttributes } from "@tiptap/core";
 window.tiptapEditor = Editor;
+window.tiptapMergeAttributes = mergeAttributes;
 
 // import StarterKit from '@tiptap/starter-kit'
 // window.tiptapStarterKit = StarterKit;
@@ -30,8 +31,6 @@ window.tiptapCodeBlockLowlight = CodeBlockLowlight;
 
 // import { lowlight } from 'lowlight';
 // window.tiptapLowlight = lowlight;
-import Mention from "@tiptap/extension-mention";
-window.tiptapMention = Mention;
 
 import Italic from "@tiptap/extension-italic";
 window.tiptapItalic = Italic;
@@ -113,6 +112,15 @@ window.tiptapTextAlign = TextAlign;
 
 import Highlight from "@tiptap/extension-highlight";
 window.tiptapHighlight = Highlight;
+
+import Mention from "@tiptap/extension-mention";
+window.tiptapMention = Mention;
+
+import Suggestion from "@tiptap/suggestion";
+window.tiptapSuggestion = Suggestion;
+
+import tippy from "tippy.js";
+window.tiptapTippy = tippy;
 
 import { generateHTML } from "@tiptap/html";
 window.tiptapgenerateHTML = generateHTML;

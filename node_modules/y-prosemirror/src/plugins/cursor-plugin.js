@@ -77,7 +77,7 @@ export const createDecorations = (
   const decorations = []
   if (
     ystate.snapshot != null || ystate.prevSnapshot != null ||
-    ystate.binding === null
+    ystate.binding.mapping.size === 0
   ) {
     // do not render cursors while snapshot is active
     return DecorationSet.create(state.doc, [])
@@ -204,9 +204,6 @@ export const yCursorPlugin = (
         const ystate = ySyncPluginKey.getState(view.state)
         // @note We make implicit checks when checking for the cursor property
         const current = awareness.getLocalState() || {}
-        if (ystate.binding == null) {
-          return
-        }
         if (view.hasFocus()) {
           const selection = getSelection(view.state)
           /**
