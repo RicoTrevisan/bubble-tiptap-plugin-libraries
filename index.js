@@ -1,3 +1,5 @@
+window.tiptap = {};
+
 import { Editor, mergeAttributes } from "@tiptap/core";
 window.tiptapEditor = Editor;
 window.tiptapMergeAttributes = mergeAttributes;
@@ -118,6 +120,15 @@ window.tiptapMention = Mention;
 
 import Suggestion from "@tiptap/suggestion";
 window.tiptapSuggestion = Suggestion;
+
+import FontFamily from "@tiptap/extension-font-family";
+window.tiptap.FontFamily = FontFamily;
+
+import TextStyle from "@tiptap/extension-text-style";
+window.tiptap.TextStyle = TextStyle;
+
+import Color from "@tiptap/extension-color";
+window.tiptap.Color = Color;
 
 import tippy from "tippy.js";
 window.tiptapTippy = tippy;
