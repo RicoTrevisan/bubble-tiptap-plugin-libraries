@@ -136,6 +136,9 @@ window.tiptapTippy = tippy;
 import { generateHTML } from "@tiptap/html";
 window.tiptapgenerateHTML = generateHTML;
 
+import ImageResize from "tiptap-imagresize";
+tiptap.ImageResize = ImageResize;
+
 import Collaboration from "@tiptap/extension-collaboration";
 window.tiptapCollaboration = Collaboration;
 

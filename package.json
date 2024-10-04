@@ -60,6 +60,7 @@
     "@tiptap/starter-kit": "^2.1.8",
     "esbuild": "^0.18.20",
     "lowlight": "^3.1.0",
+    "tiptap-imagresize": "^1.1.0",
     "yjs": "^13.6.7"
   }
 }
