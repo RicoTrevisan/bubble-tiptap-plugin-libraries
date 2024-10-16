@@ -1,11 +1,12 @@
 window.tiptap = {};
 
-import { Editor, mergeAttributes } from "@tiptap/core";
+import { Editor, mergeAttributes, generateHTML } from "@tiptap/core";
 window.tiptapEditor = Editor;
 window.tiptapMergeAttributes = mergeAttributes;
+window.tiptap.generateHTML = generateHTML;
 
-// import StarterKit from '@tiptap/starter-kit'
-// window.tiptapStarterKit = StarterKit;
+import StarterKit from "@tiptap/starter-kit";
+window.tiptap.StarterKit = StarterKit;
 
 import Document from "@tiptap/extension-document";
 window.tiptapDocument = Document;
@@ -132,9 +133,6 @@ window.tiptap.Color = Color;
 
 import tippy from "tippy.js";
 window.tiptapTippy = tippy;
-
-import { generateHTML } from "@tiptap/html";
-window.tiptapgenerateHTML = generateHTML;
 
 import ImageResize from "tiptap-imagresize";
 tiptap.ImageResize = ImageResize;
