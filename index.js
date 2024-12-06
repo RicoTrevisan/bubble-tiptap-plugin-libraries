@@ -140,6 +140,11 @@ window.tiptap.ImageResize = ImageResize;
 import FileHandler from "@tiptap-pro/extension-file-handler";
 window.tiptap.FileHandler = FileHandler;
 
+import DragHandle from "@tiptap-pro/extension-drag-handle";
+window.tiptap.DragHandle = DragHandle;
+
+// Collab libraries
+
 import Collaboration from "@tiptap/extension-collaboration";
 window.tiptapCollaboration = Collaboration;
 
