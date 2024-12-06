@@ -135,7 +135,10 @@ import tippy from "tippy.js";
 window.tiptapTippy = tippy;
 
 import ImageResize from "tiptap-imagresize";
-tiptap.ImageResize = ImageResize;
+window.tiptap.ImageResize = ImageResize;
+
+import FileHandler from "@tiptap-pro/extension-file-handler";
+window.tiptap.FileHandler = FileHandler;
 
 import Collaboration from "@tiptap/extension-collaboration";
 window.tiptapCollaboration = Collaboration;
