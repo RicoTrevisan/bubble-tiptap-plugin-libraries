@@ -5,9 +5,6 @@ window.tiptapEditor = Editor;
 window.tiptapMergeAttributes = mergeAttributes;
 window.tiptap.generateHTML = generateHTML;
 
-import StarterKit from "@tiptap/starter-kit";
-window.tiptap.StarterKit = StarterKit;
-
 import Document from "@tiptap/extension-document";
 window.tiptapDocument = Document;
 
@@ -134,14 +131,14 @@ window.tiptap.Color = Color;
 import tippy from "tippy.js";
 window.tiptapTippy = tippy;
 
-import ImageResize from "tiptap-imagresize";
-window.tiptap.ImageResize = ImageResize;
-
 import FileHandler from "@tiptap-pro/extension-file-handler";
 window.tiptap.FileHandler = FileHandler;
 
 import DragHandle from "@tiptap-pro/extension-drag-handle";
 window.tiptap.DragHandle = DragHandle;
+
+import UniqueID from "@tiptap-pro/extension-unique-id";
+window.tiptap.UniqueID = UniqueID;
 
 // Collab libraries
 
